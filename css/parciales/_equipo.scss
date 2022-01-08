@@ -1,0 +1,94 @@
+@import "./variables";
+
+.equipo{
+    background-color: $tomato;
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    &__titulo--grande{
+        font-family: 'Londrina Solid', cursive;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 20px 0px; 
+        text-align: center;
+    }
+    &__contenedor{
+        display: flex;
+        flex-direction: row; /*porque su padre es column*/
+        padding: 10px 60px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__miembro{
+        padding: 20px 10px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.8;
+    
+    }
+    
+    
+    &__img{
+        width: 100%;
+        border-radius: 50%;
+        max-width: 160px;
+        height: 160px;
+        object-fit: cover;
+        margin: auto;
+    }
+    
+    &__img--azul{
+        border: 10px solid #001F45;
+    }
+    
+    &__img--rojo{
+        border: 10px solid #FF0033;
+    }
+    
+    &__img--rosa{
+        border: $rosa;
+    }
+}
+
+
+
+
+
+.complementoEquipo{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.complementoEquipo__contenedor{
+  display: flex;
+  padding: 10px 60px;
+  gap: 50px; 
+  align-items: center; 
+}
+
+.complementoEquipo__img{
+    width: 100%;
+}
+
+.complementoEquipo__contenedor--texto{
+    flex-basis: 100%;
+}
+
+.complementoEquipo__titulo{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.complementoEquipo__parrafo{
+    font-size: 1rem;
+    line-height: 1.8;
+}

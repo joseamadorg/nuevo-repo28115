@@ -1,0 +1,26 @@
+.hero{
+    height: 80vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    &__contenedor{
+        color: purple; 
+        padding: 20px 15px;
+        position: relative;
+        left: 30px;
+    }
+    &__contenedor--img img{
+        width: 100%;
+    }
+    
+    &__titulo{
+        font-family: 'Londrina Solid', cursive;
+        font-weight: 400;
+        font-size: 4.5rem;
+    }
+}
+
+
+

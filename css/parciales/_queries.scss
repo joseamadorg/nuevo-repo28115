@@ -1,0 +1,77 @@
+/* MEDIA QUERIES */
+
+/*TABLET*/
+@media screen and (max-width: 768px) {
+    .footer, .complementoEquipo__contenedor, .equipo__contenedor, .complementoMain {
+    flex-direction: column;
+}
+
+.complementoEquipo__contenedor, .equipo__contenedor, .complementoMain {
+    padding: 10px 20px;
+}
+
+.hero__titulo {
+   font-size: 2.5rem;
+}
+
+.hero__contenedor {
+    color: purple;
+    padding: 0px;
+    left: 10px;
+    top: 0px; 
+}
+.hero{
+    grid-template-columns: 1fr;
+}
+
+.break{
+    display: block; 
+}
+
+.tomato {
+    background-color: sandybrown;
+}
+
+    
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+
+.tomato {
+    background-color: salmon;
+}
+.hero__contenedor{
+    order: 1; 
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.hero__contenedor--img{
+    order: -1; 
+}
+
+.equipo{
+    background-color:white;
+    color:purple; 
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+}
+
+
+@media screen and (max-width: 375px) {
+.header__logo{
+    max-width: 70%;
+}
+}
