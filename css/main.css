@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.elgeneral {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.separador {
+  background: green;
+  height: 10px !important;
+  margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__logo {
+  max-width: 100%;
+}
+
+.header__logo:hover {
+  cursor: pointer;
+}
+
+.header__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__item {
+  margin: 0px 1rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: purple;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.4rem;
+}
+
+.header__link:hover {
+  background: green;
+  color: #fff;
+}

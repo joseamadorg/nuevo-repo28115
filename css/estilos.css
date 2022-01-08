@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto:wght@300;400;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 .elgeneral{
@@ -15,7 +10,8 @@
 
 .separador{
     background: purple;
-    height: 10px; 
+    height: 10px !important; 
+    margin: 0; 
 }
 
 .header{
@@ -130,11 +126,10 @@
 
 .equipo{
     background-color: tomato;
-    color:purple; 
+    color: #fff; 
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-image: url("../img/section-1.png");
     background-repeat: no-repeat;
     background-position: bottom;
 
@@ -186,9 +181,7 @@
     border: 10px solid #D0004B;
 }
 
-.equipo__img--gris{
-    border: 10px solid #40516B;
-}
+
 
 .complementoEquipo{
     display: flex;
@@ -252,9 +245,26 @@
     display: inline-block;
 }
 
+.equipo__img--gris{
+    border: 10px solid #40516B;
+}
+
 
 .break{
     display: none;
+}
+
+.main-bs{
+    height: 80vh;
+
+}
+
+.complementoMain--bg {
+    background-color: purple;
+}
+
+.tomato{
+    background-color: tomato;
 }
 
 
@@ -287,11 +297,22 @@
     .break{
         display: block; 
     }
+
+    .tomato {
+        background-color: sandybrown;
+    }
+    
         
 }
 
 
+
+
 @media screen and (max-width: 425px) {
+
+    .tomato {
+        background-color: salmon;
+    }
     .hero__contenedor{
         order: 1; 
         align-self: start;
@@ -311,8 +332,6 @@
         color:purple; 
         display: flex;
         flex-direction: column;
-        overflow: hidden;
-        background-image: url("../img/section-2.png");
         background-repeat: no-repeat;
         background-position: center;
     
@@ -320,6 +339,12 @@
     
 }
 
+
+@media screen and (max-width: 375px) {
+    .header__logo{
+        max-width: 70%;
+    }
+}
 
 
 

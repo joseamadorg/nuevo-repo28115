@@ -1,0 +1,36 @@
+@import "./variables";
+.header{
+    display: flex; 
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__logo{
+       max-width: 100%;
+       &:hover {
+          cursor: pointer;
+       }
+    }
+    
+    &__list{
+        list-style: none;
+        display: flex;
+    }
+    
+    &__item{
+        margin: 0px 1rem;
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: purple; 
+        font-family: 'Londrina Solid', cursive;
+        font-size: 1.4rem;
+        &:hover{
+            background: $tomato;
+            color: #fff; 
+        }
+    }
+    
+}
